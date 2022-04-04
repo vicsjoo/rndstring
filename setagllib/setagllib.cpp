@@ -12,10 +12,11 @@ void gibberish();
 std::string RandomString(int len);
 int main()
 {
-    for (size_t i = 0; i < 6; i++)
+    for (size_t i = 0; i < 100; i++)
     {
-       // satanic();
+        satanic();
         gibberish();
+
     }
     
     
@@ -34,11 +35,11 @@ void gibberish() {
 
   //  char hell[20] = "";
 
-    for (size_t i = 0; i < 20; i++)
+    for (size_t i = 0; i < 1; i++)
     {
  //       hell[i] << (char)RandomString(!);
-        std::cout << RandomString(1);
-        satanic();
+          std::cout << RandomString(10) << std::endl;
+    //    satanic();
     }
 
  //   std::cout << hell;
