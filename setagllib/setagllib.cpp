@@ -9,6 +9,7 @@ int main()
     for (size_t i = 0; i < 6; i++)
     {
         satanic();
+
     }
     
     
@@ -19,5 +20,7 @@ void satanic() {
     char str[sizeof(satan) + 1];
     memcpy(str, satan, sizeof(satan));
     str[sizeof(satan)] = '\0';
-    std::cout << str+ std::string("\n");       
+    std::cout << str << std::endl;
+    // std::cout << str+ std::string("\n");     
+
 }
