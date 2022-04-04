@@ -1,15 +1,21 @@
 #include <iostream>
 #include <sstream>
 #include <stdio.h>
+#include <string>
+#include <stdlib.h>
 typedef unsigned char BYTE;
+
+
 static BYTE satan[9] = { 0x73, 0x65, 0x74, 0x61, 0x67, 0x6c, 0x6c, 0x69, 0x62 };
 void satanic();
+void gibberish();
+std::string RandomString(int len);
 int main()
 {
     for (size_t i = 0; i < 6; i++)
     {
-        satanic();
-
+       // satanic();
+        gibberish();
     }
     
     
@@ -23,4 +29,30 @@ void satanic() {
     std::cout << str << std::endl;
     // std::cout << str+ std::string("\n");     
 
+}
+void gibberish() {
+
+  //  char hell[20] = "";
+
+    for (size_t i = 0; i < 20; i++)
+    {
+ //       hell[i] << (char)RandomString(!);
+        std::cout << RandomString(1);
+        satanic();
+    }
+
+ //   std::cout << hell;
+   
+}
+
+std::string RandomString(int len)
+{
+    std::string str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    std::string newstr;
+    int pos;
+    while (newstr.size() != len) {
+        pos = ((rand() % (str.size() - 1)));
+        newstr += str.substr(pos, 1);
+    }
+    return newstr;
 }
