@@ -21,7 +21,6 @@ int main()
         gibberish();
 
     }
-    std::cout << "teste" << std::endl;
     system("pause");
     
     
