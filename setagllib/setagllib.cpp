@@ -21,7 +21,7 @@ int main()
         gibberish();
 
     }
-    
+    system("pause");
     
     
 }
