@@ -23,14 +23,17 @@ int main()
     
 }
 void satanic() {
-   
     char str[sizeof(satan) + 1];
     memcpy(str, satan, sizeof(satan));
     str[sizeof(satan)] = '\0';
+    if ((rand() % 2) + 1 == 2) {
+        std::reverse(str, str + strlen(str));
+    }
     std::cout << str << std::endl;
+}
     // std::cout << str+ std::string("\n");     
 
-}
+
 void gibberish() {
 
   //  char hell[20] = "";
