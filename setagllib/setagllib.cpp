@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string>
 #include <stdlib.h>
+#include <ctime>
+
 typedef unsigned char BYTE;
 
 
@@ -12,6 +14,7 @@ void gibberish();
 std::string RandomString(int len);
 int main()
 {
+    srand(static_cast<unsigned int>(time(NULL))<<10);
     for (size_t i = 0; i < 100; i++)
     {
         satanic();
@@ -26,6 +29,7 @@ void satanic() {
     char str[sizeof(satan) + 1];
     memcpy(str, satan, sizeof(satan));
     str[sizeof(satan)] = '\0';
+
     if ((rand() % 2) + 1 == 2) {
         std::reverse(str, str + strlen(str));
     }
