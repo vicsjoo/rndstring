@@ -34,7 +34,7 @@ int main()
         fakehash();
 
     }
-    system("pause");
+    // system("pause");
     
     
 }
