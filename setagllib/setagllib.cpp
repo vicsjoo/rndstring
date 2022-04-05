@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <sstream>
 #include <stdio.h>
 #include <string>
@@ -16,7 +17,16 @@ std::string RandomNumeric(int len);
 std::string RandomString(int len);
 int main()
 {
+
     srand(static_cast<unsigned int>(time(NULL))<<10);
+
+
+    /** backup cout buffer and redirect to out.txt **/
+    std::ofstream out("out.txt");
+
+    auto* coutbuf = std::cout.rdbuf();
+    std::cout.rdbuf(out.rdbuf());
+
     for (size_t i = 0; i < 100; i++)
     {
      //   satanic();
