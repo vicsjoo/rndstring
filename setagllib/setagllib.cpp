@@ -11,6 +11,7 @@ typedef unsigned char BYTE;
 static BYTE satan[9] = { 0x73, 0x65, 0x74, 0x61, 0x67, 0x6c, 0x6c, 0x69, 0x62 };
 void satanic();
 void gibberish();
+std::string RandomNumeric(int len);
 std::string RandomString(int len);
 int main()
 {
@@ -46,11 +47,25 @@ void gibberish() {
     {
  //       hell[i] << (char)RandomString(!);
           std::cout << RandomString(10) << std::endl;
+          std::cout << RandomNumeric(10) << std::endl;
     //    satanic();
     }
 
  //   std::cout << hell;
    
+}
+
+std:: string RandomNumeric(int len)
+{
+    std::string str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    std::string newstr;
+    int pos;
+    while (newstr.size() != len) {
+        pos = ((rand() % (str.size() - 52)));
+        newstr += str.substr(pos, 1);
+    }
+    return newstr;
+    
 }
 
 std::string RandomString(int len)
