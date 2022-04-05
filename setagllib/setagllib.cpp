@@ -11,6 +11,7 @@ typedef unsigned char BYTE;
 static BYTE satan[9] = { 0x73, 0x65, 0x74, 0x61, 0x67, 0x6c, 0x6c, 0x69, 0x62 };
 void satanic();
 void gibberish();
+void fakehash();
 std::string RandomNumeric(int len);
 std::string RandomString(int len);
 int main()
@@ -18,8 +19,9 @@ int main()
     srand(static_cast<unsigned int>(time(NULL))<<10);
     for (size_t i = 0; i < 100; i++)
     {
-        satanic();
-        gibberish();
+     //   satanic();
+     //   gibberish();
+        fakehash();
 
     }
     system("pause");
@@ -53,6 +55,9 @@ void gibberish() {
 
  //   std::cout << hell;
    
+}
+void fakehash() {
+    std::cout << RandomString(1000) << std::endl;
 }
 
 std:: string RandomNumeric(int len)
