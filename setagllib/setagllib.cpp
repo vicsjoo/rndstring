@@ -27,7 +27,7 @@ int main()
     auto* coutbuf = std::cout.rdbuf();
     std::cout.rdbuf(out.rdbuf());
 
-    for (size_t i = 0; i < 10000; i++)
+    for (size_t i = 0; i < (10000); i++)
     {
      //   satanic();
      //   gibberish();
@@ -75,7 +75,7 @@ std:: string RandomNumeric(int len)
     std::string str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     std::string newstr;
     int pos;
-    while (newstr.size() != len) {
+    while (newstr.size() != len -1) {
         pos = ((rand() % (str.size() - 52)));
         newstr += str.substr(pos, 1);
     }
