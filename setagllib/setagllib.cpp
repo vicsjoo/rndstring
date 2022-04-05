@@ -27,7 +27,7 @@ int main()
     auto* coutbuf = std::cout.rdbuf();
     std::cout.rdbuf(out.rdbuf());
 
-    for (size_t i = 0; i < 100; i++)
+    for (size_t i = 0; i < 10000; i++)
     {
      //   satanic();
      //   gibberish();
