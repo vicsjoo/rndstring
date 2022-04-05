@@ -79,7 +79,7 @@ std::string RandomString(int len)
     std::string newstr;
     int pos;
     while (newstr.size() != len) {
-        pos = ((rand() % (str.size() - 1)));
+        pos = ((rand() % (str.size())));
         newstr += str.substr(pos, 1);
     }
     return newstr;
