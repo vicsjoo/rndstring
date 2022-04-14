@@ -1,2 +1,2 @@
 # setagllib
-Learning C++, thanks stack overflow xD
+Generates a string with random characters and outputs a text file.
