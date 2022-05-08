@@ -1,2 +1,2 @@
 # Gibberish generator.
-Generates a string with random characters and outputs a text file.
+Generates a string with random characters and saves to a .txt
