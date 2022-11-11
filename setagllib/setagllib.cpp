@@ -19,7 +19,6 @@ int main()
 
 	srand(static_cast<unsigned int>(time(NULL)) << 10);
 
-
 	/** backup cout buffer and redirect to out.txt **/
 	std::ofstream out("out.txt");
 
@@ -31,10 +30,8 @@ int main()
 		//   satanic();
 		//   gibberish();
 		fakehash();
-
 	}
 	// system("pause");
-
 
 }
 void satanic() {
@@ -49,10 +46,7 @@ void satanic() {
 	// std::cout << str+ std::string("\n");   
 }
 
-
-
 void gibberish() {
-
 
 	for (size_t i = 0; i < 1; i++)
 	{
